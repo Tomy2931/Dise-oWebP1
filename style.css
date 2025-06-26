@@ -1,7 +1,13 @@
+@font-face {
+    src:'./fonts/Libertinus_Math';
+    font-family: "Rowdies", sans-serif;
+
+}
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: "Rowdies", sans-serif;
 }
 html,body {
     height: 100%;
@@ -27,16 +33,19 @@ body{
 .iconos{
     margin-left: 10px;
     margin-right: 10px;
-    height: 60%;
+    height: 4rem;
+    width: 4rem;
 }
-.iconoPrincipal, .iconPerfil{ 
+.iconoAnim{ 
     transition: 0.5s ease-in-out;
 }
-.iconoPrincipal:hover,.iconPerfil:hover{
+.iconoAnim:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
 .barraBusqueda{
     width: 50%;
+    height: 50%;
     padding-left: 10px;
     border: solid 2px;
     font-size: 1.7rem;
@@ -51,6 +60,22 @@ body{
     border-radius: 100%;
     display: none;
 }
+
+
+.carritoInfo{
+    position: absolute;
+    right: 0;
+    top: 15%;
+    background: linear-gradient(to bottom, #ffffff, #706959);
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 15vw;
+    height: 50vh;
+    border: solid 3px ;
+
+    display: none; 
+}
+
 
 /* Main */
 
@@ -106,6 +131,9 @@ main{flex: 1; display: flex; flex-direction: column;}
     background-color: red;
     width: 100%;
     height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
 }
 
@@ -113,6 +141,7 @@ main{flex: 1; display: flex; flex-direction: column;}
         .iconoPrincipal{display: none;}
         .barraBusqueda{margin-left: 20px; width: 60%;}
         .iconPerfil{display: none;}
+        .iconCarro{display: none;}
         .bars{display: block; margin-right: 20px;}
         .listaProductos{
             grid-template-columns:repeat(2, 1fr);
@@ -126,4 +155,5 @@ main{flex: 1; display: flex; flex-direction: column;}
 
         .productPrice{font-size: 1.4rem;} 
         .productName{font-size: 1rem; } 
+        .barraInferior{font-size: 0.6rem;}
      }

@@ -9,18 +9,28 @@
 <body>
     <header>
         <nav class="barraSuperior principalGradient">
-            <img class="iconoPrincipal iconos" src="https://cdn-icons-png.freepik.com/256/9582/9582913.png?semt=ais_hybrid" alt="icono">
-            <input type="text" class="barraBusqueda iconos principalGradient br " placeholder="Busque aquí..."></input>
-            <img class="iconos iconPerfil" src="./icons/user.png" alt="icono perfil">
-            <img  class="iconos bars" src="./icons/menu-bar.png" alt="icono barras">
+            <img class="iconos iconoAnim" src="https://cdn-icons-png.freepik.com/256/9582/9582913.png?semt=ais_hybrid" alt="icono">
+            <input type="text" class="barraBusqueda principalGradient br " placeholder="Busque aquí..."></input>
+            <div>
+                <img class="iconPerfil iconos iconoAnim" src="./icons/user.png" alt="icono perfil">
+                <img id="iconCarrito" class="iconCarro iconos iconoAnim" src="./icons/IconCarro.png" alt="">
+                <img  class="bars iconos" src="./icons/menu-bar.png" alt="icono barras">
+            </div>
+
         </nav>
+        <div class="carritoInfo br ">
+
+            
+        </div>
     </header>
     <main>
         <section class="listaProductos ">
             <article class="producto principalGradient">
                 <img class="productImage br" src="https://sistema.langtecnologia.com.ar/img/qloud/94/5028_1.jpg" alt="Imagen">
+                <img class="iconAgregar iconos iconoAnim" src="./icons/IconAgregar.png" alt="icono Agregar">
+
                 <div class="prudoctTextInfo">
-                    <h2 class="productPrice">$ 200000</h2>
+                    <h2 class="productPrice">$ 200.000</h2>
                     <h2 class="productName">Joystick</h2>
                 </div>
             </article>
@@ -29,7 +39,10 @@
               
     </main>
     <footer class="principalGradient barraInferior">
-        <h2>Hola</h2>
+        <h3>Términos y condiciones</h3>
+        <h3>Ayuda</h3>
+        <h3>Redes sociales</h3>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
