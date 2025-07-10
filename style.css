@@ -68,14 +68,25 @@ body{
     top: 15%;
     background: linear-gradient(to bottom, #ffffff, #706959);
     border: 1px solid #ccc;
-    padding: 10px;
-    width: 15vw;
-    height: 50vh;
+    padding: 3px;
+    width: 25vw;
+    height: 75vh;
     border: solid 3px ;
 
-    display: none; 
+    /* display: none; */
+
+    
 }
 
+.carritoInfoItem{
+    width: 100%;
+    height: 25%;
+    background-color: rgb(222, 227, 255);
+    border-bottom: 5px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* Main */
 
